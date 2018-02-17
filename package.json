@@ -1,0 +1,40 @@
+{
+	"name": "react-starter",
+	"version": "1.0.0",
+	"description": "react starter with webpack and babel",
+	"main": "index.js",
+	"repository": "https://github.com/nkas17/react-starter.git",
+	"author": "nathan m weller <nkas17@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"start": "./node_modules/.bin/webpack-dev-server",
+		"build": "webpack -p",
+		"build:test": "webpack -d",
+		"eslint": "./node_modules/.bin/eslint --ext .jsx --ext .js src webpack.config.*",
+		"eslint:report": "./node_modules/.bin/eslint --ext .jsx --ext .js src --output-file ./report/eslint-report.html --format html",
+		"test": "jest"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"babel-preset-env": "^1.6.0",
+		"babel-preset-react": "^6.24.1",
+		"copy-webpack-plugin": "^4.1.1",
+		"css-loader": "0.28.9",
+		"eslint": "^4.8.0",
+		"eslint-config-airbnb": "15.1.0",
+		"eslint-plugin-import": "2.7.0",
+		"eslint-plugin-jsx-a11y": "5.1.1",
+		"eslint-plugin-react": "7.4.0",
+		"extract-text-webpack-plugin": "3.0.2",
+		"jest": "^21.2.1",
+		"react-test-renderer": "^16.0.0",
+		"style-loader": "0.20.2",
+		"webpack": "^3.6.0",
+		"webpack-dev-server": "^2.9.1"
+	},
+	"dependencies": {
+		"react": "^16.0.0",
+		"react-dom": "^16.0.0"
+	}
+}
