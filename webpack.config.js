@@ -9,6 +9,9 @@ const config = {
 	},
 	devServer: {
 		contentBase: './dist',
+		proxy: {
+			'/customer-data-share': 'http://localhost:3000',
+		},
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
