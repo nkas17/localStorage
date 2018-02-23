@@ -27,15 +27,15 @@ const CustomerDataShare = (function CustomerDataShare() {
 			return '';
 		},
 		getId: function getId() {
-			const customerData = JSON.parse(sessionStorage.getItem('customerDataShare'));
-			if (customerData !== null && !customerData.error && customerData.id) {
-				return customerData.id;
-			}
-			return '';
+			return sessionStorage.getItem('customerDataShareId');
 		},
 		setId: function setId(id) {
+			sessionStorage.removeItem('customerDataShare');
+			sessionStorage.removeItem('customerDataShareId');
 			return customerDataShareApi.getCustomerDataShare(id).then((data) => {
-				sessionStorage.clear();
+				if (!data.error) {
+					sessionStorage.setItem('customerDataShareId', id);
+				}
 				sessionStorage.setItem('customerDataShare', JSON.stringify(data));
 			});
 		},

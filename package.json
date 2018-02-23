@@ -7,7 +7,7 @@
 	"author": "nathan m weller <nkas17@gmail.com>",
 	"license": "MIT",
 	"scripts": {
-		"start": "./node_modules/.bin/webpack-dev-server",
+		"start": "title localStorage && webpack-dev-server --config ./webpack.config.js",
 		"build": "webpack -p",
 		"build:test": "webpack -d",
 		"eslint": "./node_modules/.bin/eslint --ext .jsx --ext .js src webpack.config.*",
@@ -28,12 +28,14 @@
 		"eslint-plugin-react": "7.4.0",
 		"extract-text-webpack-plugin": "3.0.2",
 		"jest": "^21.2.1",
+		"react-hot-loader": "^3.1.3",
 		"react-test-renderer": "^16.0.0",
 		"style-loader": "0.20.2",
 		"webpack": "^3.6.0",
 		"webpack-dev-server": "^2.9.1"
 	},
 	"dependencies": {
+		"prop-types": "15.6.0",
 		"react": "^16.0.0",
 		"react-dom": "^16.0.0"
 	}

@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
 import App from './App';
-// import CustomerDataShare from './customerDataShare/customerDataShare';
 import './styles/styles.css';
 
 // CustomerDataShare.setId(2).then((data) => {
+const render = (Application) => {
 	ReactDOM.render(
-		<App />,
-		document.getElementById('app'), // eslint-disable-line no-undef
+		<AppContainer>
+			<Application />
+		</AppContainer>,
+		document.getElementById('app')
 	);
-// });
+};
+
+render(App);
+
+// Hot Module Replacement API
+if (module.hot) {
+	module.hot.accept('./App', () => {
+		render(App);
+	});
+}
+
