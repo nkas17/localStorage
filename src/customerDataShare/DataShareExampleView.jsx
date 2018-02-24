@@ -1,5 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+// import { AOAutocomplete } from '../AOAutocomplete';
+
+const exampleItems = [
+	{ caption: 'Item 1', value: 'item1' },
+	{ caption: 'Item 2', value: 'item2' },
+	{ caption: 'Item 3', value: 'item3' },
+];
 
 const DataShareExampleView = ({
 	id,
@@ -19,12 +26,12 @@ const DataShareExampleView = ({
 					<div className="ao-contentbox">
 						<h4 className="ao-heading-400">Select new Customer</h4>
 						<div className="ao-form-line-M">
-							<input className="ao-textbox ao-height-48" id="custId" type="text" placeholder="Enter Customer Id"/>
+							<input className="ao-textbox ao-height-48" id="custId" type="text" placeholder="Enter Customer Id" />
 							<button className="ao-button-primary" onClick={clickHandler}>search</button>
 						</div>
 						<div className="ao-form-line-M">
 							{(error && <p>{error}</p>) ||
-							<p>{`Customer Id ${id || ''} "the wall" ${name || ''}`}</p>}
+								<p>{`Customer Id ${id || ''} "the wall" ${name || ''}`}</p>}
 						</div>
 					</div>
 					<div className="ao-contentbox">
@@ -32,6 +39,22 @@ const DataShareExampleView = ({
 						<div className="ao-form-line-M">
 							<label htmlFor="additionalNamedInsured" className="ao-label-right">Search Additional Named Insureds</label>
 							<input id="additionalNamedInsured" className="ao-textbox ao-width-XL ao-height-48" type="text" placeholder="Type For Additional Names" />
+						</div>
+						<div className="ao-form-line-M">
+						{/*	<AOAutocomplete
+								name="test2"
+								id="test2"
+								items={exampleItems}
+								renderMenu={(items, value) => (
+									<div>
+										{value === '' ? (
+											<div>Type 1, 2, or 3 to get a specific item</div>
+										) : items.length === 0 ? (
+											<div>No matches for {value}</div>
+										) : items}
+									</div>
+								)}
+							/>*/}
 						</div>
 					</div>
 				</div>
