@@ -1,6 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { reduxForm } from 'redux-form';
 import CustomerDataShare from './customerDataShare';
 import DataShareExampleView from './DataShareExampleView';
+
+let DataShareExampleWithRedux;
 
 class DataShareExample extends React.Component {
 	constructor(props, context) {
@@ -11,6 +16,12 @@ class DataShareExample extends React.Component {
 			value: '',
 		};
 		this.clickHandler = this.clickHandler.bind(this);
+
+		DataShareExampleWithRedux = reduxForm({
+			form: 'DataShareForm',
+			enableReinitialize: true,
+			keepDirtyOnReinitialize: true,
+		})(DataShareExampleView);
 	}
 
 	componentDidMount() {
@@ -36,7 +47,7 @@ class DataShareExample extends React.Component {
 
 	render() {
 		return (
-			<DataShareExampleView
+			<DataShareExampleWithRedux
 				id={CustomerDataShare.getId()}
 				name={CustomerDataShare.getLastName()}
 				clickHandler={this.clickHandler}
@@ -45,4 +56,19 @@ class DataShareExample extends React.Component {
 	}
 }
 
-export default DataShareExample;
+const mapStateToProps = (rootState) => {
+	return {
+	};
+};
+
+const mapDispatchToProps = (dispatch) => {
+	return {
+		actions: bindActionCreators({
+		}, dispatch),
+	};
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(DataShareExample);

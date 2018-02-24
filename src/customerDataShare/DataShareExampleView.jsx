@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { AOAutocomplete } from '../AOAutocomplete';
+import { AOAutocomplete } from '../AOAutocomplete';
 
 const exampleItems = [
 	{ caption: 'Item 1', value: 'item1' },
@@ -24,7 +24,7 @@ const DataShareExampleView = ({
 			<div className="row">
 				<div className="column">
 					<div className="ao-contentbox">
-						<h4 className="ao-heading-400">Select new Customer</h4>
+						<h4 className="ao-heading-400">Select New Customer</h4>
 						<div className="ao-form-line-M">
 							<input className="ao-textbox ao-height-48" id="custId" type="text" placeholder="Enter Customer Id" />
 							<button className="ao-button-primary" onClick={clickHandler}>search</button>
@@ -41,7 +41,8 @@ const DataShareExampleView = ({
 							<input id="additionalNamedInsured" className="ao-textbox ao-width-XL ao-height-48" type="text" placeholder="Type For Additional Names" />
 						</div>
 						<div className="ao-form-line-M">
-						{/*	<AOAutocomplete
+							<label htmlFor="test2" className="ao-label-right">autocomplete</label>
+							<AOAutocomplete
 								name="test2"
 								id="test2"
 								items={exampleItems}
@@ -54,7 +55,7 @@ const DataShareExampleView = ({
 										) : items}
 									</div>
 								)}
-							/>*/}
+							/>
 						</div>
 					</div>
 				</div>

@@ -65,11 +65,6 @@ module.exports = {
 	},
 
 	module: {
-		loaders: [{
-			test: /\.jsx$/,
-			loaders: ['react-hot-loader/webpack', 'babel'],
-			include: path.join(__dirname, 'src'),
-		}],
 		rules: [
 			{
 				test: /\.jsx?$/,
