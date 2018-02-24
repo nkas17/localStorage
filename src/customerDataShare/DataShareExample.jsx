@@ -1,6 +1,6 @@
 import React from 'react';
-import CustomerDataShare from './customerDataShare/customerDataShare';
-import DataShareSampleView from './DataShareSampleView';
+import CustomerDataShare from './customerDataShare';
+import DataShareExampleView from './DataShareExampleView';
 
 class DataShareExample extends React.Component {
 	constructor(props, context) {
@@ -8,8 +8,8 @@ class DataShareExample extends React.Component {
 		this.state = {
 			id: 0,
 			error: null,
+			value: '',
 		};
-
 		this.clickHandler = this.clickHandler.bind(this);
 	}
 
@@ -36,11 +36,10 @@ class DataShareExample extends React.Component {
 
 	render() {
 		return (
-			<DataShareSampleView
+			<DataShareExampleView
 				id={CustomerDataShare.getId()}
 				name={CustomerDataShare.getLastName()}
 				clickHandler={this.clickHandler}
-				error={this.state.error}
 			/>
 		);
 	}

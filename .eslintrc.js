@@ -36,7 +36,6 @@ module.exports = {
 		'react/require-default-props': 'off',
 		'max-len': 'off',
 		'no-underscore-dangle': 'off',
-		'linebreak-style': ['warn', 'windows'],
 		'no-plusplus': 'off',
 		'jsx-a11y/no-static-element-interactions': 'warn',
 		'func-names': 'error',
