@@ -46,15 +46,6 @@ const DataShareExampleView = ({
 								name="test2"
 								id="test2"
 								items={exampleItems}
-								renderMenu={(items, value) => (
-									<div>
-										{value === '' ? (
-											<div>Type 1, 2, or 3 to get a specific item</div>
-										) : items.length === 0 ? (
-											<div>No matches for {value}</div>
-										) : items}
-									</div>
-								)}
 							/>
 						</div>
 					</div>
