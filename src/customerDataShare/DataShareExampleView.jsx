@@ -1,18 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { AOAutocomplete } from '../AOAutocomplete';
-
-const exampleItems = [
-	{ caption: 'Item 1', value: 'item1' },
-	{ caption: 'Item 2', value: 'item2' },
-	{ caption: 'Item 3', value: 'item3' },
-];
+import AOAutocomplete from '../AOAutocomplete/AOAutocomplete';
 
 const DataShareExampleView = ({
 	id,
 	name,
 	clickHandler,
 	error,
+	additionalNames,
 }) => (
 	<div className="row">
 		<div className="column">
@@ -24,28 +19,28 @@ const DataShareExampleView = ({
 			<div className="row">
 				<div className="column">
 					<div className="ao-contentbox">
-						<h4 className="ao-heading-400">Select New Customer</h4>
+						<h4 className="ao-heading-400">Select a Customer</h4>
 						<div className="ao-form-line-M">
-							<input className="ao-textbox ao-height-48" id="custId" type="text" placeholder="Enter Customer Id" />
-							<button className="ao-button-primary" onClick={clickHandler}>search</button>
+							<select className="ao-textbox ao-width-XXS" id="custId" onChange={clickHandler}>
+								<option>1</option>
+								<option>2</option>
+							</select>
 						</div>
 						<div className="ao-form-line-M">
 							{(error && <p>{error}</p>) ||
-								<p>{`Customer Id ${id || ''} "the wall" ${name || ''}`}</p>}
+								<p>{`Customer ${id || ''} - ${name || ''}`}</p>}
 						</div>
 					</div>
 					<div className="ao-contentbox">
 						<h4 className="ao-heading-400">Additional Insured Autocomplete</h4>
 						<div className="ao-form-line-M">
-							<label htmlFor="additionalNamedInsured" className="ao-label-right">Search Additional Named Insureds</label>
-							<input id="additionalNamedInsured" className="ao-textbox ao-width-XL ao-height-48" type="text" placeholder="Type For Additional Names" />
-						</div>
-						<div className="ao-form-line-M">
-							<label htmlFor="test2" className="ao-label-right">autocomplete</label>
+							<label htmlFor="test2" className="ao-label-right">Search Additional Named Insureds</label>
 							<AOAutocomplete
+								additionalClassNames="ao-width-L"
+								placeholder="Type For Additional Names"
 								name="test2"
 								id="test2"
-								items={exampleItems}
+								items={additionalNames}
 							/>
 						</div>
 					</div>
@@ -60,6 +55,7 @@ DataShareExampleView.propTypes = {
 	name: PropTypes.string,
 	clickHandler: PropTypes.func,
 	error: PropTypes.string,
+	additionalNames: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default DataShareExampleView;

@@ -1,7 +1,6 @@
 /**
  * get data for customer data sharing
  * from external source
- * MOCKING FOR NOW
  */
 
 const handleResult = (response) => {
@@ -22,21 +21,6 @@ const handleResult = (response) => {
 };
 
 class CustomerDataShareApi {
-	static getMockCustomerDataShare(id) {
-		if (id === 1) {
-			return {
-				firstName: 'John',
-				lastName: 'Smith',
-				id,
-			};
-		}
-		return {
-			firstName: 'George',
-			lastName: 'Mirabal',
-			id,
-		};
-	}
-
 	static getCustomerDataShare(id) {
 		const url = `/customer-data-share/${id}`;
 		const options = {

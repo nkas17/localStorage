@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Field } from 'redux-form';
 import AutocompleteFormConnector from './AutocompleteFormConnector';
 import * as defaults from './utility';
+import './aoAutocomplete.css';
 
 /**
  * Creates an autocomplete component.

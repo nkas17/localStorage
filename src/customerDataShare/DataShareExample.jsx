@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { reduxForm } from 'redux-form';
-import CustomerDataShare from './customerDataShare';
+import CustomerDataShare from './customerDataShareSelectors';
 import DataShareExampleView from './DataShareExampleView';
 
 let DataShareExampleWithRedux;
@@ -13,7 +13,7 @@ class DataShareExample extends React.Component {
 		this.state = {
 			id: 0,
 			error: null,
-			value: '',
+			additionalNames: [],
 		};
 		this.clickHandler = this.clickHandler.bind(this);
 
@@ -27,11 +27,14 @@ class DataShareExample extends React.Component {
 	componentDidMount() {
 		const id = CustomerDataShare.getId();
 		const error = CustomerDataShare.getError();
+		const additionalNames = CustomerDataShare.getAdditionalNames();
 
 		this.state = {
 			id,
 			error,
+			additionalNames,
 		};
+		this.clickHandler();
 	}
 
 	clickHandler() {
@@ -40,7 +43,8 @@ class DataShareExample extends React.Component {
 			CustomerDataShare.setId(newId).then(() => {
 				const id = CustomerDataShare.getId();
 				const error = CustomerDataShare.getError();
-				this.setState({ id, error });
+				const additionalNames = CustomerDataShare.getAdditionalNames();
+				this.setState({ id, error, additionalNames });
 			});
 		}
 	}
@@ -51,6 +55,7 @@ class DataShareExample extends React.Component {
 				id={CustomerDataShare.getId()}
 				name={CustomerDataShare.getLastName()}
 				clickHandler={this.clickHandler}
+				additionalNames={this.state.additionalNames}
 			/>
 		);
 	}

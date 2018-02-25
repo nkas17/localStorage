@@ -1,2 +1,0 @@
-
-import CustomerDataShare from './customerDataShare';

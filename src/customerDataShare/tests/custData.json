@@ -1,0 +1,482 @@
+{
+  "primaryInsureds": [
+    {
+      "policies": [],
+      "proposals": [],
+      "dateOfBirth": 1519131647671,
+      "driverStatus": "DRIVER",
+      "entityType": "INDIVIDUAL",
+      "gender": "MALE",
+      "maritalStatus": "SINGLE",
+      "primaryName": {
+        "first": "Wreck",
+        "middle": "it",
+        "last": "Ralph",
+        "suffix": "",
+        "fullname": "",
+        "aliasName": ""
+      },
+      "tertiaryName": {
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "fullname": "",
+        "aliasName": ""
+      },
+      "secondaryName": {
+        "first": "",
+        "middle": "",
+        "last": "",
+        "suffix": "",
+        "fullname": "",
+        "aliasName": ""
+      },
+      "ssn": "123456789"
+    }
+  ],
+  "contactInformations": [
+    {
+      "policies": null,
+      "proposals": null,
+      "emailAddress": "fake@auto-owners.com",
+      "faxNumber": {
+        "area": "517",
+        "exchange": "323",
+        "lineNumber": "1201",
+        "extension": null,
+        "countryCode": null,
+        "standardFormattedPhoneNumber": "(517) 323-1201",
+        "formattedPhoneNumberWithSpaces": "517 323 1201",
+        "formattedPhoneNumberWithDashes": "517-323-1201",
+        "formattedPhoneNumberWithDots": "517.323.1201"
+      },
+      "fein": "123456789",
+      "mailingAddress": {
+        "addressId": null,
+        "nameLine1": null,
+        "nameLine2": null,
+        "nameLine3": null,
+        "careOf": null,
+        "country": null,
+        "addressLine1": "6101 Anacapri Blvd",
+        "addressLine2": "",
+        "city": "Lansing",
+        "state": "MI",
+        "zip": "48917",
+        "zip2ndPart": "",
+        "cityAndProvince": null,
+        "otherCountry": null,
+        "foreignPostalCode": null,
+        "countyCode": null,
+        "overridden": false,
+        "municipalityTaxCode": null,
+        "county": {
+          "countyId": null,
+          "stateId": null,
+          "areaAbbreviation2": null,
+          "countyCode": null,
+          "countyFipsCode": null,
+          "countyName": null,
+          "countyDescription": null,
+          "countyLongitude": 0,
+          "countyLatitude": 0
+        },
+        "zipPlusFour": "",
+        "plusFourCode": "",
+        "postalCode": null,
+        "domesticPostalCode": "48917",
+        "stateAbbrev": "MI",
+        "zipCode": "48917",
+        "formattedAddress": "6101 Anacapri Blvd, Lansing, MI ",
+        "formattedCityStateZipCountry": "Lansing, MI ",
+        "formattedNameAndAddress": ", 6101 Anacapri Blvd, Lansing, MI "
+      },
+      "phoneNumber": {
+        "area": "517",
+        "exchange": "323",
+        "lineNumber": "1200",
+        "extension": null,
+        "countryCode": null,
+        "standardFormattedPhoneNumber": "(517) 323-1200",
+        "formattedPhoneNumberWithSpaces": "517 323 1200",
+        "formattedPhoneNumberWithDashes": "517-323-1200",
+        "formattedPhoneNumberWithDots": "517.323.1200"
+      },
+      "previousAddress": {
+        "addressId": null,
+        "nameLine1": null,
+        "nameLine2": null,
+        "nameLine3": null,
+        "careOf": null,
+        "country": null,
+        "addressLine1": null,
+        "addressLine2": null,
+        "city": null,
+        "state": null,
+        "zip": null,
+        "zip2ndPart": null,
+        "cityAndProvince": null,
+        "otherCountry": null,
+        "foreignPostalCode": null,
+        "countyCode": null,
+        "overridden": false,
+        "municipalityTaxCode": null,
+        "county": {
+          "countyId": null,
+          "stateId": null,
+          "areaAbbreviation2": null,
+          "countyCode": null,
+          "countyFipsCode": null,
+          "countyName": null,
+          "countyDescription": null,
+          "countyLongitude": 0,
+          "countyLatitude": 0
+        },
+        "zipPlusFour": null,
+        "plusFourCode": null,
+        "postalCode": null,
+        "domesticPostalCode": "",
+        "stateAbbrev": null,
+        "zipCode": null,
+        "formattedAddress": ",  ",
+        "formattedCityStateZipCountry": " ",
+        "formattedNameAndAddress": ", ,  "
+      },
+      "websiteUrl": "auto-owners.com"
+    }
+  ],
+  "agencies": [
+    {
+      "policies": [],
+      "proposals": [],
+      "address": {
+        "addressId": null,
+        "nameLine1": null,
+        "nameLine2": null,
+        "nameLine3": null,
+        "careOf": null,
+        "country": null,
+        "addressLine1": "6101 Anacapri Blvd",
+        "addressLine2": "",
+        "city": "Lansing",
+        "state": "MI",
+        "zip": "48917",
+        "zip2ndPart": "",
+        "cityAndProvince": null,
+        "otherCountry": null,
+        "foreignPostalCode": null,
+        "countyCode": null,
+        "overridden": false,
+        "municipalityTaxCode": null,
+        "county": {
+          "countyId": null,
+          "stateId": null,
+          "areaAbbreviation2": null,
+          "countyCode": null,
+          "countyFipsCode": null,
+          "countyName": null,
+          "countyDescription": null,
+          "countyLongitude": 0,
+          "countyLatitude": 0
+        },
+        "zipPlusFour": "",
+        "plusFourCode": "",
+        "postalCode": null,
+        "domesticPostalCode": "48917",
+        "stateAbbrev": "MI",
+        "zipCode": "48917",
+        "formattedAddress": "6101 Anacapri Blvd, Lansing, MI ",
+        "formattedCityStateZipCountry": "Lansing, MI ",
+        "formattedNameAndAddress": ", 6101 Anacapri Blvd, Lansing, MI "
+      },
+      "agencyCode": "01-0001-00",
+      "contact": {
+        "policies": null,
+        "proposals": null,
+        "address": null,
+        "emailAddress": null,
+        "faxNumber": null,
+        "name": null,
+        "phoneNumber": null,
+        "sameAsFirstNamedInsured": false,
+        "sameAsMailingAddress": false,
+        "websiteUrl": null
+      },
+      "contactEmailAddress": "auto-owners@aoins.com",
+      "customerNumber": "5551414",
+      "licenseNumber": "A123456",
+      "phoneNumber": {
+        "area": "517",
+        "exchange": "323",
+        "lineNumber": "1201",
+        "extension": null,
+        "countryCode": null,
+        "standardFormattedPhoneNumber": "(517) 323-1201",
+        "formattedPhoneNumberWithSpaces": "517 323 1201",
+        "formattedPhoneNumberWithDashes": "517-323-1201",
+        "formattedPhoneNumberWithDots": "517.323.1201"
+      }
+    }
+  ],
+  "policyInformations": [
+    {
+      "policies": null,
+      "proposals": null,
+      "bookTransfer": "B12345",
+      "businessStartDate": 1519131647670,
+      "businessState": "MI",
+      "descriptionOfBusiness": "Smashing Blocks so another guy can fix stuff",
+      "groupMemberNumber": "767",
+      "lineOfBusiness": "COMMERCIAL_AUTO",
+      "policyNumber": {
+        "unformattedPolicyNumber": "1234567890",
+        "formattedPolicyNumber": "12-345678-90",
+        "policyYear": "12",
+        "middleNumber": "345678",
+        "policySuffix": "90",
+        "branchNumber": "",
+        "effectiveYear": "",
+        "policyPrefix": "",
+        "adaFormattedPolicyNumber": "3456781290",
+        "paddedBranchNumber": "",
+        "system": "USYS"
+      },
+      "sourceTransactionId": "",
+      "termEffectiveDate": 1519131647670,
+      "termExpirationDate": 1519131647670
+    }
+  ],
+  "relatedPolicies": [
+    {
+      "policies": null,
+      "proposals": null,
+      "agencyCode": "01-0002-00",
+      "cancelled": false,
+      "companyNumber": "01",
+      "discountPolicyType": "",
+      "effectiveDate": 1519131647671,
+      "insuredName1": "Wreck-it Ralph",
+      "insuredName2": "",
+      "insuredName3": "",
+      "lineOfBusiness": "COMMERCIAL_AUTO",
+      "paidClaim": false,
+      "policyNumber": {
+        "unformattedPolicyNumber": "1234567890",
+        "formattedPolicyNumber": "12-345678-90",
+        "policyYear": "12",
+        "middleNumber": "345678",
+        "policySuffix": "90",
+        "branchNumber": "",
+        "effectiveYear": "",
+        "policyPrefix": "",
+        "adaFormattedPolicyNumber": "3456781290",
+        "paddedBranchNumber": "",
+        "system": "USYS"
+      },
+      "policyStatus": "A",
+      "policyType": "",
+      "relatedNumber": "",
+      "relatedType": ""
+    }
+  ],
+  "additionalInsuredNames": [
+    [
+      "Jen Spartan",
+      "Louie Huxley",
+      "Simon Atlanta"
+    ],
+    [
+      "John Spartan",
+      "Lanena Huxley",
+      "Simon Phoenix"
+    ],
+    [
+      "John Spartan",
+      "Lanena Huxley"
+    ]
+  ],
+  "householdMembers": [
+    {
+      "policies": null,
+      "proposals": null,
+      "dateOfBirth": 1519131647669,
+      "driversLicenseNumber": "R123525647121",
+      "driverStatus": "DRIVER",
+      "gender": "MALE",
+      "losses": [],
+      "maritalStatus": "SINGLE",
+      "name": {
+        "first": "Wreck",
+        "middle": "it",
+        "last": "Ralph",
+        "suffix": "",
+        "fullname": "",
+        "aliasName": ""
+      },
+      "relationshipToInsured": null,
+      "ssn": "123456789",
+      "violations": []
+    }
+  ],
+  "inspectionContact": [
+    {
+      "policies": null,
+      "proposals": null,
+      "address": {
+        "addressId": null,
+        "nameLine1": null,
+        "nameLine2": null,
+        "nameLine3": null,
+        "careOf": null,
+        "country": null,
+        "addressLine1": "6101 Anacapri Blvd",
+        "addressLine2": "",
+        "city": "Lansing",
+        "state": "MI",
+        "zip": "48917",
+        "zip2ndPart": "",
+        "cityAndProvince": null,
+        "otherCountry": null,
+        "foreignPostalCode": null,
+        "countyCode": null,
+        "overridden": false,
+        "municipalityTaxCode": null,
+        "county": {
+          "countyId": null,
+          "stateId": null,
+          "areaAbbreviation2": null,
+          "countyCode": null,
+          "countyFipsCode": null,
+          "countyName": null,
+          "countyDescription": null,
+          "countyLongitude": 0,
+          "countyLatitude": 0
+        },
+        "zipPlusFour": "",
+        "plusFourCode": "",
+        "postalCode": null,
+        "domesticPostalCode": "48917",
+        "stateAbbrev": "MI",
+        "zipCode": "48917",
+        "formattedAddress": "6101 Anacapri Blvd, Lansing, MI ",
+        "formattedCityStateZipCountry": "Lansing, MI ",
+        "formattedNameAndAddress": ", 6101 Anacapri Blvd, Lansing, MI "
+      },
+      "emailAddress": "",
+      "faxNumber": {
+        "area": null,
+        "exchange": null,
+        "lineNumber": null,
+        "extension": null,
+        "countryCode": null,
+        "standardFormattedPhoneNumber": "null-null",
+        "formattedPhoneNumberWithSpaces": "null null",
+        "formattedPhoneNumberWithDashes": "null-null",
+        "formattedPhoneNumberWithDots": "null.null"
+      },
+      "name": {
+        "first": "Wreck",
+        "middle": "it",
+        "last": "Ralph",
+        "suffix": "",
+        "fullname": "",
+        "aliasName": ""
+      },
+      "phoneNumber": {
+        "area": null,
+        "exchange": null,
+        "lineNumber": null,
+        "extension": null,
+        "countryCode": null,
+        "standardFormattedPhoneNumber": "null-null",
+        "formattedPhoneNumberWithSpaces": "null null",
+        "formattedPhoneNumberWithDashes": "null-null",
+        "formattedPhoneNumberWithDots": "null.null"
+      },
+      "sameAsFirstNamedInsured": true,
+      "sameAsMailingAddress": true,
+      "websiteUrl": "fakeUrl.com"
+    }
+  ],
+  "auditContact": [
+    {
+      "policies": null,
+      "proposals": null,
+      "address": {
+        "addressId": null,
+        "nameLine1": null,
+        "nameLine2": null,
+        "nameLine3": null,
+        "careOf": null,
+        "country": null,
+        "addressLine1": "6101 Anacapri Blvd",
+        "addressLine2": "",
+        "city": "Lansing",
+        "state": "MI",
+        "zip": "48917",
+        "zip2ndPart": "",
+        "cityAndProvince": null,
+        "otherCountry": null,
+        "foreignPostalCode": null,
+        "countyCode": null,
+        "overridden": false,
+        "municipalityTaxCode": null,
+        "county": {
+          "countyId": null,
+          "stateId": null,
+          "areaAbbreviation2": null,
+          "countyCode": null,
+          "countyFipsCode": null,
+          "countyName": null,
+          "countyDescription": null,
+          "countyLongitude": 0,
+          "countyLatitude": 0
+        },
+        "zipPlusFour": "",
+        "plusFourCode": "",
+        "postalCode": null,
+        "domesticPostalCode": "48917",
+        "stateAbbrev": "MI",
+        "zipCode": "48917",
+        "formattedAddress": "6101 Anacapri Blvd, Lansing, MI ",
+        "formattedCityStateZipCountry": "Lansing, MI ",
+        "formattedNameAndAddress": ", 6101 Anacapri Blvd, Lansing, MI "
+      },
+      "emailAddress": "",
+      "faxNumber": {
+        "area": null,
+        "exchange": null,
+        "lineNumber": null,
+        "extension": null,
+        "countryCode": null,
+        "standardFormattedPhoneNumber": "null-null",
+        "formattedPhoneNumberWithSpaces": "null null",
+        "formattedPhoneNumberWithDashes": "null-null",
+        "formattedPhoneNumberWithDots": "null.null"
+      },
+      "name": {
+        "first": "Wreck",
+        "middle": "it",
+        "last": "Ralph",
+        "suffix": "",
+        "fullname": "",
+        "aliasName": ""
+      },
+      "phoneNumber": {
+        "area": null,
+        "exchange": null,
+        "lineNumber": null,
+        "extension": null,
+        "countryCode": null,
+        "standardFormattedPhoneNumber": "null-null",
+        "formattedPhoneNumberWithSpaces": "null null",
+        "formattedPhoneNumberWithDashes": "null-null",
+        "formattedPhoneNumberWithDots": "null.null"
+      },
+      "sameAsFirstNamedInsured": true,
+      "sameAsMailingAddress": true,
+      "websiteUrl": "fakeUrl.com"
+    }
+  ]
+}

@@ -1,8 +1,10 @@
 /**
  * save data to the local store
  */
+import _ from 'lodash';
 import customerDataShareApi from './customerDataShareApi';
 
+// object that handles all the sessionStorage data access
 const CustomerDataShare = (function CustomerDataShare() {
 	return {
 		getCustomerDataShare: function getCustomerDataShare() {
@@ -12,6 +14,7 @@ const CustomerDataShare = (function CustomerDataShare() {
 			}
 			return '';
 		},
+
 		getFirstName: function getFirstName() {
 			const customerData = JSON.parse(sessionStorage.getItem('customerDataShare'));
 			if (customerData != null && !customerData.error && customerData.firstName) {
@@ -19,6 +22,7 @@ const CustomerDataShare = (function CustomerDataShare() {
 			}
 			return '';
 		},
+
 		getLastName: function getLastName() {
 			const customerData = JSON.parse(sessionStorage.getItem('customerDataShare'));
 			if (customerData != null && !customerData.error && customerData.lastName) {
@@ -26,9 +30,11 @@ const CustomerDataShare = (function CustomerDataShare() {
 			}
 			return '';
 		},
+
 		getId: function getId() {
 			return sessionStorage.getItem('customerDataShareId');
 		},
+
 		setId: function setId(id) {
 			sessionStorage.removeItem('customerDataShare');
 			sessionStorage.removeItem('customerDataShareId');
@@ -39,6 +45,18 @@ const CustomerDataShare = (function CustomerDataShare() {
 				sessionStorage.setItem('customerDataShare', JSON.stringify(data));
 			});
 		},
+
+		getAdditionalNames: function getAdditionalNames() {
+			const customerData = JSON.parse(sessionStorage.getItem('customerDataShare'));
+			if (customerData != null && !customerData.error && customerData.additionalInsuredNames) {
+				const sortUniqNames = _.map(_.uniq(_.flattenDeep(customerData.additionalInsuredNames)), (item) => {
+					return { caption: item, value: item };
+				});
+				return sortUniqNames;
+			}
+			return [];
+		},
+
 		getError: function getError() {
 			const customerData = JSON.parse(sessionStorage.getItem('customerDataShare'));
 			if (customerData !== null && customerData.error) {
